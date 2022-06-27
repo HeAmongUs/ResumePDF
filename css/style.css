@@ -370,6 +370,7 @@ a {
 
 .container {
   margin: 0 auto;
+  max-width: 90%;
   min-height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
