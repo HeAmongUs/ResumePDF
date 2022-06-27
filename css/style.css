@@ -369,9 +369,8 @@ a {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
-  min-height: 400px;
+  min-height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,11 +378,6 @@ a {
 
 strong {
   color: #e0a80d;
-}
-
-.kwargs {
-  padding-bottom: 50px;
-  border-bottom: 1px #404242 solid;
 }
 
 .kwargs-list {
@@ -519,7 +513,7 @@ strong {
 }
 
 .section {
-  min-height: 400px;
+  min-height: 200px;
   width: 100%;
   position: relative;
 }
@@ -530,7 +524,7 @@ strong {
 
 .section-left {
   z-index: 10;
-  width: 30%;
+  width: 20%;
 }
 
 .section-left .title {
@@ -610,6 +604,7 @@ strong {
 }
 
 .header .links {
+  margin-left: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -779,7 +774,7 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 10px;  
 }
 
 .skills-list__item-header__value {
@@ -882,116 +877,13 @@ strong {
 .projects-list__item__title a:hover {
   color: #fff;
 }
-
-@media (max-width: 1200px) {
-  .section-inner {
-    padding: 40px 60px 40px 30px;
-  }
-  .header .phone-email__title {
-    font-size: 14px;
-  }
-  .header .phone-email__subtitle {
-    font-size: 14px;
-  }
-  .header .subtitle {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 992px) {
-  .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .section-left {
-    background: #282929 !important;
-  }
-  .section-left-content {
-    text-align: left;
-  }
-  .section-left-content .title {
-    font-size: 16px;
-  }
-  .header {
-    background: #2d2e2e;
-  }
-  .header .section-left {
-    padding: 40px 0 20px 0;
-    background: #2d2e2e !important;
-  }
-  .header .section-left-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header .section-right {
-    text-align: center;
-    padding: 0 0 20px 0;
-  }
-  .header .kwargs {
-    padding-bottom: 20px;
-  }
-  .header .kwargs-list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .header .kwargs-list__item {
-    font-size: 14px;
-  }
-  .header .links {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .section-left, .section-right {
-    width: 100%;
-  }
-}
-
-@media (max-width: 768px) {
-  .section-inner {
-    padding: 20px 30px 20px 20px;
-  }
-  .header .section-left {
-    padding-top: 20px;
-  }
-  .header-photo__photo {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .header .links .phone-email {
-    margin: 0 0 10px 10px;
-  }
-  .header .links .phone-email__title {
-    padding: 10px 0 0 10px;
-    font-weight: bold;
-  }
-  .header .links .phone-email__subtitle {
-    padding: 10px 0 0 10px;
-  }
-  .header .links .phone-email + .social {
-    margin-left: 20px;
-  }
-}
 /*# sourceMappingURL=style.css.map */
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
